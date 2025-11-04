@@ -32,6 +32,9 @@ run/
 runs/
 logs/
 
+# Generated Resources
+src/generated/
+
 # Miscellaneous
 *.log
 *.swp

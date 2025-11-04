@@ -1,8 +1,6 @@
 {
   "pack": {
     "description": "GearForge Resources",
-    "pack_format": 34,
-    "neoforge:resource_pack_format": 34,
-    "neoforge:data_pack_format": 41
+    "pack_format": 34
   }
 }

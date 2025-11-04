@@ -19,6 +19,9 @@ repositories {
     mavenCentral()
 }
 
+// Add generated resources to main sourceset
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
 neoForge {
     version = neo_version
     
@@ -29,6 +32,11 @@ neoForge {
         
         server {
             server()
+        }
+        
+        data {
+            data()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').absolutePath, '--existing', file('src/main/resources/').absolutePath
         }
     }
     
