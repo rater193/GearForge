@@ -1,0 +1,42 @@
+# Gradle
+.gradle/
+build/
+out/
+classes/
+
+# Eclipse
+*.launch
+.settings/
+.metadata
+.classpath
+.project
+.recommenders
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# NeoForge
+run/
+runs/
+logs/
+
+# Generated Resources
+src/generated/
+
+# Miscellaneous
+*.log
+*.swp
+*.bak
+*~
