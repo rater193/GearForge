@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "north": "gearforge:block/upgrade_station_front",
+    "east":  "gearforge:block/upgrade_station_side",
+    "south": "gearforge:block/upgrade_station_back",
+    "west":  "gearforge:block/upgrade_station_side",
+    "up":    "gearforge:block/upgrade_station_top",
+    "down":  "gearforge:block/upgrade_station_bottom"
+  }
+}

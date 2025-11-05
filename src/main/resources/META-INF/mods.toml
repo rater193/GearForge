@@ -1,0 +1,11 @@
+modLoader="javafml"
+loaderVersion="[64,)"
+license="MIT"
+issueTrackerURL="https://github.com/rater193/gearforge/issues"
+
+[[mods]]
+modId="gearforge"
+version="1.0.0"
+displayName="GearForge"
+description='''GearForge - unlock items to gain XP, level gear, and spend gear points on upgrades.'''  
+authors="rater193"

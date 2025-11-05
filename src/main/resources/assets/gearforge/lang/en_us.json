@@ -1,0 +1,9 @@
+{
+  "block.gearforge.unlock_machine": "Unlock Machine",
+  "block.gearforge.upgrade_station": "Upgrade Station",
+  "item.gearforge.unlock_machine": "Unlock Machine",
+  "item.gearforge.upgrade_station": "Upgrade Station",
+  "gui.gearforge.upgrade_station.title": "Upgrade Station",
+  "gui.gearforge.upgrade_station.choose": "Choose an Upgrade",
+  "gui.gearforge.card.cost": "Cost: %d GP"
+}

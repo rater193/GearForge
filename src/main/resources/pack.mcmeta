@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "GearForge Resources",
-    "pack_format": 34
+    "pack_format": 18,
+    "description": "GearForge mod resources"
   }
 }
