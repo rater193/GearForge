@@ -1,0 +1,8 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+[[mods]]
+modId="gearforge"
+version="0.1.0"
+displayName="GearForge"
+description='''GearForge - unlockable gear leveling and upgrade station.'''

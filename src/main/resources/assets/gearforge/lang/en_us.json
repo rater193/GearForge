@@ -1,0 +1,6 @@
+{
+  "block.gearforge.gear_infuser": "Gear Infuser",
+  "block.gearforge.upgrade_station": "Upgrade Station",
+  "gui.gearforge.upgrade": "Upgrade Station",
+  "itemGroup.gearforge": "GearForge"
+}

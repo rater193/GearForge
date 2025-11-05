@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gearforge:gear_infuser_north" },
+    "facing=south": { "model": "gearforge:gear_infuser_south" },
+    "facing=west": { "model": "gearforge:gear_infuser_west" },
+    "facing=east": { "model": "gearforge:gear_infuser_east" }
+  }
+}

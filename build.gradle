@@ -1,97 +1,25 @@
 plugins {
-    id 'java-library'
+    id 'java'
     id 'eclipse'
-    id 'idea'
-    id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.28-beta'
+    id 'maven'
 }
 
-version = mod_version
-group = mod_group_id
+group = 'com.gearforge'
+version = '0.1.0'
 
-base {
-    archivesName = mod_id
-}
+sourceCompatibility = '17'
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(21)
-
-repositories {
-    mavenCentral()
-}
-
-// Add generated resources to main sourceset
-sourceSets.main.resources { srcDir 'src/generated/resources' }
-
-neoForge {
-    version = neo_version
-    
-    runs {
-        client {
-            client()
-        }
-        
-        server {
-            server()
-        }
-        
-        data {
-            data()
-            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').absolutePath, '--existing', file('src/main/resources/').absolutePath
-        }
-    }
-    
-    mods {
-        gearforge {
-            sourceSet sourceSets.main
-        }
-    }
-}
-
-dependencies {
-    // NeoForge dependency is added automatically by the moddev plugin
-}
-
-tasks.withType(ProcessResources).configureEach {
-    var replaceProperties = [
-            minecraft_version      : minecraft_version,
-            minecraft_version_range: minecraft_version_range,
-            neo_version            : neo_version,
-            neo_version_range      : neo_version_range,
-            loader_version_range   : loader_version_range,
-            mod_id                 : mod_id,
-            mod_name               : mod_name,
-            mod_license            : mod_license,
-            mod_version            : mod_version,
-            mod_authors            : mod_authors,
-            mod_description        : mod_description
-    ]
-    inputs.properties replaceProperties
-
-    filesMatching(['META-INF/neoforge.mods.toml']) {
-        expand replaceProperties + [project: project]
-    }
-}
-
-tasks.withType(JavaCompile).configureEach {
+tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-publishing {
-    publications {
-        register('mavenJava', MavenPublication) {
-            from components.java
-        }
-    }
-    repositories {
-        maven {
-            url "file://${project.projectDir}/repo"
-        }
-    }
+repositories {
+    mavenCentral()
+    maven { name = 'forge' url = 'https://maven.minecraftforge.net' }
 }
 
-idea {
-    module {
-        downloadSources = true
-        downloadJavadoc = true
-    }
+dependencies {
+    // Neoforge / Forge mappings for 1.21.1 need to be configured in gradle setup by the user.
 }
+
+// This is a minimal build.gradle meant as a placeholder. Configure the neoforge toolchain as needed.

@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "gearforge:block/station_bottom",
+    "up": "gearforge:block/station_top",
+    "north": "gearforge:block/station_front",
+    "south": "gearforge:block/station_back",
+    "east": "gearforge:block/station_side",
+    "west": "gearforge:block/station_side"
+  }
+}
